@@ -9,10 +9,14 @@ public class BackwardsString extends SpecialString {
 
 	@Override
 	public String funkifyText(String v) {
-	for(int i = 0; i < 100; i++) {
-		v.chars();
+	String holderofts = "";
+	for(int i = v.length()-1; i >= 0; i--) {
+		char t;
+	t = v.charAt(i);
+	holderofts = holderofts + t;
+	 
 	}
-		return v;
+		return holderofts;
 		
 	}
 

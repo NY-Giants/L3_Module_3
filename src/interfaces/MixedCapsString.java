@@ -9,9 +9,21 @@ public class MixedCapsString extends SpecialString {
 
 	@Override
 	public String funkifyText(String v) {
-		return v;
-		
+		String holderofxs = "";
+		for (int i = 0; i < v.length(); i++) {
+			char x;
+			x = v.charAt(i);
+			if(i%2==1) {
+				holderofxs = holderofxs + Character.toUpperCase(x) ;
+			}
+			else {
+				holderofxs = holderofxs + Character.toLowerCase(x) ;
+			}
+			
+			
+		}
+		return holderofxs;
+
 	}
 
-	
 }
